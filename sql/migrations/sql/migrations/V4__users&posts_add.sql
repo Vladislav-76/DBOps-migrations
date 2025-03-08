@@ -1,6 +1,6 @@
 WITH inserted_userd_id AS (
     INSERT INTO
-        users ('name', 'email')
+        users (name, email)
     VALUES
         ('user_1', 'email_1'),
         ('user_2', 'email_2')
