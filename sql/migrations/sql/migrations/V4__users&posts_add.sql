@@ -1,9 +1,8 @@
 WITH inserted_userd_id AS (
     INSERT INTO
-        users (name, email)
+        users (name)
     VALUES
-        ('user_1', 'email_1'),
-        ('user_2', 'email_2')
+        ('user_1'), ('user_2')
     RETURNING id
 )
 
