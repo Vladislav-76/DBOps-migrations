@@ -9,6 +9,6 @@ WITH inserted_userd_id AS (
 
 INSERT INTO
     posts (text, owner_id)
-SELECT id,
-    (CONCAT('post_', inserted_userd_id), id),
+SELECT 
+    CONCAT('post_', inserted_userd_id), id
 FROM inserted_userd_id;
